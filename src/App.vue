@@ -101,327 +101,497 @@ export default defineComponent({
     </div>
 
     <!--热点模块-->
-    <div class="flex mx-2">
-      <div class="flex flex-col w-1/4 px-3 mx-2 bg-white rounded-md">
-        <div class="flex justify-between mt-2 border-b">
-          <div class="flex font-bold text-lg mt-0.5">
-            <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-            <div class="ml-1 text-gray-500">机器之心</div>
-          </div>
-          <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
-        </div>
-        <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-        <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">1</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+    <div class="flex flex-wrap mx-2">
+      <div class="w-3/12 mb-4">
+        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
+          <div class="flex justify-between mt-2 border-b">
+            <div class="flex font-bold text-lg mt-0.5">
+              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
+              <div class="ml-1 text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
           </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">2</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
+          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">1</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">3</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">2</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>4</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">3</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>5</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>4</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>6</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>5</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>7</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>6</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>8</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>7</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>9</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>8</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between px-3 py-2 border-t">
-          <div class="text-gray-600 text-sm">7 分钟前</div>
-          <icon-elipsis class="w-6 h-6"/>
-        </div>
-      </div>
-      <div class="flex flex-col w-1/4 px-3 mx-2 bg-white rounded-md">
-        <div class="flex justify-between mt-2 border-b">
-          <div class="flex font-bold text-lg mt-0.5">
-            <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-            <div class="ml-1 text-gray-500">机器之心</div>
-          </div>
-          <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
-        </div>
-        <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-        <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">1</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>9</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
           </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">2</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
+          <div class="flex items-center justify-between px-3 py-2 border-t">
+            <div class="text-gray-600 text-sm">7 分钟前</div>
+            <icon-elipsis class="w-6 h-6"/>
           </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">3</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>4</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>5</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>6</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>7</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>8</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>9</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between px-3 py-2 border-t">
-          <div class="text-gray-600 text-sm">7 分钟前</div>
-          <icon-elipsis class="w-6 h-6"/>
         </div>
       </div>
-      <div class="flex flex-col w-1/4 px-3 mx-2 bg-white rounded-md">
-        <div class="flex justify-between mt-2 border-b">
-          <div class="flex font-bold text-lg mt-0.5">
-            <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-            <div class="ml-1 text-gray-500">机器之心</div>
-          </div>
-          <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
-        </div>
-        <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-        <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">1</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+      <div class="w-3/12 mb-4">
+        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
+          <div class="flex justify-between mt-2 border-b">
+            <div class="flex font-bold text-lg mt-0.5">
+              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
+              <div class="ml-1 text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
           </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">2</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
+          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">1</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">3</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">2</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>4</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">3</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>5</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>4</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>6</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>5</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>7</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>6</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>8</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>7</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>9</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>8</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>9</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
           </div>
-        </div>
-        <div class="flex items-center justify-between px-3 py-2 border-t">
-          <div class="text-gray-600 text-sm">7 分钟前</div>
-          <icon-elipsis class="w-6 h-6"/>
+          <div class="flex items-center justify-between px-3 py-2 border-t">
+            <div class="text-gray-600 text-sm">7 分钟前</div>
+            <icon-elipsis class="w-6 h-6"/>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col w-1/4 px-3 mx-2 bg-white rounded-md">
-        <div class="flex justify-between mt-2 border-b">
-          <div class="flex font-bold text-lg mt-0.5">
-            <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-            <div class="ml-1 text-gray-500">机器之心</div>
+      <div class="w-3/12 mb-4">
+        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
+          <div class="flex justify-between mt-2 border-b">
+            <div class="flex font-bold text-lg mt-0.5">
+              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
+              <div class="ml-1 text-gray-500">机器之心</div>
+            </div>
+            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
           </div>
-          <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
+          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
+          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">1</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">2</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">3</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>4</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>5</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>6</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>7</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>8</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>9</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between px-3 py-2 border-t">
+            <div class="text-gray-600 text-sm">7 分钟前</div>
+            <icon-elipsis class="w-6 h-6"/>
+          </div>
         </div>
-        <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-        <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">1</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+      </div>
+      <div class="w-3/12 mb-4">
+        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
+          <div class="flex justify-between mt-2 border-b">
+            <div class="flex font-bold text-lg mt-0.5">
+              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
+              <div class="ml-1 text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
           </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">2</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
+          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">1</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
             </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">2</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">3</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>4</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>5</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>6</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>7</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>8</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>9</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
           </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div class="text-red-500">3</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>4</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>5</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>6</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>7</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>8</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
-          </div>
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>9</div>
-              <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-            </div>
-            <div class="whitespace-nowrap text-gray-500">机器之心</div>
+          <div class="flex items-center justify-between px-3 py-2 border-t">
+            <div class="text-gray-600 text-sm">7 分钟前</div>
+            <icon-elipsis class="w-6 h-6"/>
           </div>
         </div>
-        <div class="flex items-center justify-between px-3 py-2 border-t">
-          <div class="text-gray-600 text-sm">7 分钟前</div>
-          <icon-elipsis class="w-6 h-6"/>
+      </div>
+      <div class="w-3/12 mb-4">
+        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
+          <div class="flex justify-between mt-2 border-b">
+            <div class="flex font-bold text-lg mt-0.5">
+              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
+              <div class="ml-1 text-gray-500">机器之心</div>
+            </div>
+            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
+          </div>
+          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
+          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">1</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">2</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">3</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>4</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>5</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>6</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>7</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>8</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>9</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between px-3 py-2 border-t">
+            <div class="text-gray-600 text-sm">7 分钟前</div>
+            <icon-elipsis class="w-6 h-6"/>
+          </div>
+        </div>
+      </div>
+      <div class="w-3/12 mb-4">
+        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
+          <div class="flex justify-between mt-2 border-b">
+            <div class="flex font-bold text-lg mt-0.5">
+              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
+              <div class="ml-1 text-gray-500">机器之心</div>
+            </div>
+            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
+          </div>
+          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
+          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">1</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">2</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="text-red-500">3</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>4</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>5</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>6</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>7</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>8</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div>9</div>
+                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
+              </div>
+              <div class="whitespace-nowrap text-gray-500">机器之心</div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between px-3 py-2 border-t">
+            <div class="text-gray-600 text-sm">7 分钟前</div>
+            <icon-elipsis class="w-6 h-6"/>
+          </div>
         </div>
       </div>
     </div>
 
     <!--底线-->
-    <div class="flex justify-center items-center space-x-2 pt-24 pb-12">
+    <div class="flex justify-center items-center space-x-2 pt-20 pb-12">
       <span class="border-b" style="width: 100px;height: 1px;"></span>
       <div class="text-gray-600">我也是有底线的</div>
       <span class="border-b" style="width: 100px;height: 1px;"></span>
