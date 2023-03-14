@@ -1,7 +1,7 @@
 <script>
 import {defineComponent} from "vue";
 import SearchBar from "./components/SearchBar.vue";
-import IconElipsis from "./IconElipsis.vue";
+import IconElipsis from "./icon/IconElipsis.vue";
 
 export default defineComponent({
   components: {IconElipsis, SearchBar}
