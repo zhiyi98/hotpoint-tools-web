@@ -1,11 +1,5 @@
-<script>
-import {defineComponent} from "vue";
+<script setup>
 import SearchBar from "./components/SearchBar.vue";
-import IconElipsis from "./icon/IconElipsis.vue";
-
-export default defineComponent({
-  components: {IconElipsis, SearchBar}
-})
 </script>
 
 <template>
