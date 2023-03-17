@@ -3,9 +3,9 @@
     <div class="flex justify-center items-center ml-5 space-x-2">
       <img src="https://file.ipadown.com/tophub/assets/images/logo.png" alt="" class="w-8"
            style="background-color: #F7F8FA;">
-      <span>今日热榜</span>
+      <span class="hidden md:flex">今日热榜</span>
     </div>
-    <div class="relative w-1/2 flex items-center my-2 rounded-md overflow-hidden">
+    <div class="relative w-1/2 hidden md:flex items-center my-2 rounded-md overflow-hidden">
       <input
           class="border-0 placeholder-gray-200 text-gray-500 focus:outline-none bg-gray-300 h-10 w-full pl-14 hover:bg-gray-400 transition duration-200"
           type="text" value="" placeholder="搜索内容和节点"/>

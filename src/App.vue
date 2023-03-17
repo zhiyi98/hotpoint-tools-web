@@ -13,7 +13,7 @@ export default defineComponent({
   <!-- 搜索栏 -->
   <div class="drop-shadow-md" style="background-color: #f3f3f3;">
     <search-bar/>
-    <div class="flex items-center justify-center ml-auto text-sm text-gray-400">
+    <div class="hidden md:flex items-center justify-center ml-auto text-sm text-gray-400">
       <div class="text-gray-900 border-b-gray-300 border-b-2 py-3 px-5">首页</div>
       <div class="py-3 px-5">综合</div>
       <div class="py-3 px-5">科技</div>
@@ -32,7 +32,7 @@ export default defineComponent({
   <div class="min-h-screen" style="background-color: #f7f8fa;">
     <div class="mx-4 text-gray-500 text-sm">
       <div class="pt-5">最新 ></div>
-      <div class="flex items-center my-4">
+      <div class="flex items-center overflow-x-auto scrollbar my-4">
         <div class="flex flex-col items-center mr-7">
           <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/taobao.com.png_160x160.png" alt=""></div>
           <div class="mt-1.5">淘宝·天猫</div>
@@ -86,7 +86,7 @@ export default defineComponent({
       <div class="space-x-4 mb-4 text-gray-600 text-xs">
         <div><a href="#">我的订阅</a></div>
       </div>
-      <div class="flex space-x-4 mb-4 text-gray-600 text-xs">
+      <div class="hidden md:flex space-x-4 mb-4 text-gray-600 text-xs">
         <div class="text-red-500 font-bold"><a href="#">每日晚报</a></div>
         <div>·</div>
         <div><a href="#">订阅动态</a></div>
@@ -593,7 +593,7 @@ export default defineComponent({
     <!--底线-->
     <div class="flex justify-center items-center space-x-2 pt-20 pb-12">
       <span class="border-b" style="width: 100px;height: 1px;"></span>
-      <div class="text-gray-600">我也是有底线的</div>
+      <div class="text-gray-400 text-sm">我也是有底线的</div>
       <span class="border-b" style="width: 100px;height: 1px;"></span>
     </div>
 
