@@ -101,8 +101,8 @@ export default defineComponent({
     </div>
 
     <!--热点模块-->
-    <div class="flex flex-wrap mx-2">
-      <div class="w-3/12 mb-4">
+    <div class="grid grid-cols-4 mx-2">
+      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
         <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
           <div class="flex justify-between mt-2 border-b">
             <div class="flex font-bold text-lg mt-0.5">
@@ -183,7 +183,7 @@ export default defineComponent({
           </div>
         </div>
       </div>
-      <div class="w-3/12 mb-4">
+      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
         <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
           <div class="flex justify-between mt-2 border-b">
             <div class="flex font-bold text-lg mt-0.5">
@@ -264,7 +264,7 @@ export default defineComponent({
           </div>
         </div>
       </div>
-      <div class="w-3/12 mb-4">
+      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
         <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
           <div class="flex justify-between mt-2 border-b">
             <div class="flex font-bold text-lg mt-0.5">
@@ -345,7 +345,7 @@ export default defineComponent({
           </div>
         </div>
       </div>
-      <div class="w-3/12 mb-4">
+      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
         <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
           <div class="flex justify-between mt-2 border-b">
             <div class="flex font-bold text-lg mt-0.5">
@@ -426,7 +426,7 @@ export default defineComponent({
           </div>
         </div>
       </div>
-      <div class="w-3/12 mb-4">
+      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
         <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
           <div class="flex justify-between mt-2 border-b">
             <div class="flex font-bold text-lg mt-0.5">
@@ -507,7 +507,7 @@ export default defineComponent({
           </div>
         </div>
       </div>
-      <div class="w-3/12 mb-4">
+      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
         <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
           <div class="flex justify-between mt-2 border-b">
             <div class="flex font-bold text-lg mt-0.5">

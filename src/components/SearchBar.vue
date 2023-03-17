@@ -7,7 +7,7 @@
     </div>
     <div class="relative w-1/2 flex items-center my-2 rounded-md overflow-hidden">
       <input
-          class="placeholder-gray-200 text-gray-500 focus:outline-none bg-gray-300 h-10 w-full pl-14 hover:bg-gray-400 transition duration-200"
+          class="border-0 placeholder-gray-200 text-gray-500 focus:outline-none bg-gray-300 h-10 w-full pl-14 hover:bg-gray-400 transition duration-200"
           type="text" value="" placeholder="搜索内容和节点"/>
       <icon-search class="h-8 w-8 absolute inset-y-0 left-4 my-1"/>
     </div>
