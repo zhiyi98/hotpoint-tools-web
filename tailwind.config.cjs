@@ -6,7 +6,15 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      // 设置默认字体
+      fontFamily: {
+        'sans': ['微软雅黑', 'Helvetica', 'Arial', 'sans-serif']
+      },
+      colors: {
+        'default': '#7f8c8d'
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),

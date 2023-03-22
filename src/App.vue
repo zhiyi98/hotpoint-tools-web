@@ -1,596 +1,266 @@
-<script setup>
-import SearchBar from "./components/SearchBar.vue";
-</script>
-
 <template>
+  <div class="max-w-[375px] min-w-[375px] m-auto border">
 
-  <!-- 搜索栏 -->
-  <div class="drop-shadow-md" style="background-color: #f3f3f3;">
-    <search-bar/>
-    <div class="hidden md:flex items-center justify-center ml-auto text-sm text-gray-400">
-      <div class="text-gray-900 border-b-gray-300 border-b-2 py-3 px-5">首页</div>
-      <div class="py-3 px-5">综合</div>
-      <div class="py-3 px-5">科技</div>
-      <div class="py-3 px-5">娱乐</div>
-      <div class="py-3 px-5">社区</div>
-      <div class="py-3 px-5">购物</div>
-      <div class="py-3 px-5">财经</div>
-      <div class="py-3 px-5">开发</div>
-      <div class="py-3 px-5">校务</div>
-      <div class="py-3 px-5">专栏</div>
-      <div class="py-3 px-5">报刊</div>
-    </div>
-  </div>
-
-  <!-- content -->
-  <div class="min-h-screen" style="background-color: #f7f8fa;">
-    <div class="mx-4 text-gray-500 text-sm">
-      <div class="pt-5">最新 ></div>
-      <div class="flex items-center overflow-x-auto scrollbar my-4">
-        <div class="flex flex-col items-center mr-7">
-          <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/taobao.com.png_160x160.png" alt=""></div>
-          <div class="mt-1.5">淘宝·天猫</div>
-          <div class="text-xs text-gray-400">热销总榜</div>
-        </div>
-        <div class="flex flex-col items-center mr-7">
-          <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/taobao.com.png_160x160.png" alt=""></div>
-          <div class="mt-1.5">淘宝·天猫</div>
-          <div class="text-xs text-gray-400">热销总榜</div>
-        </div>
-        <div class="flex flex-col items-center mr-7">
-          <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/p.pinduoduo.com.png_160x160.png" alt=""></div>
-          <div class="mt-1.5">淘宝·天猫</div>
-          <div class="text-xs text-gray-400">热销总榜</div>
-        </div>
-        <div class="flex flex-col items-center mr-7">
-          <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/jd.com.png_160x160.png" alt=""></div>
-          <div class="mt-1.5">淘宝·天猫</div>
-          <div class="text-xs text-gray-400">热销总榜</div>
-        </div>
-        <div class="flex flex-col items-center mr-7">
-          <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/remai.today.png_160x160.png" alt=""></div>
-          <div class="mt-1.5">淘宝·天猫</div>
-          <div class="text-xs text-gray-400">热销总榜</div>
-        </div>
-        <div class="flex flex-col items-center mr-7">
-          <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/ozbargain.com.au.png_160x160.png" alt=""></div>
-          <div class="mt-1.5">淘宝·天猫</div>
-          <div class="text-xs text-gray-400">热销总榜</div>
-        </div>
-        <div class="flex flex-col items-center mr-7">
-          <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/sohu.com.png_160x160.png" alt=""></div>
-          <div class="mt-1.5">淘宝·天猫</div>
-          <div class="text-xs text-gray-400">热销总榜</div>
-        </div>
-        <div class="flex flex-col items-center mr-7">
-          <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/huntsbot.com.png_160x160.png" alt=""></div>
-          <div class="mt-1.5">淘宝·天猫</div>
-          <div class="text-xs text-gray-400">热销总榜</div>
-        </div>
-        <div class="flex flex-col items-center mr-7">
-          <div class="rounded-full w-20 h-20 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/uscardforum.com.png_160x160.png" alt=""></div>
-          <div class="mt-1.5">淘宝·天猫</div>
-          <div class="text-xs text-gray-400">热销总榜</div>
+    <!--头部-->
+    <div class="grid grid-cols-12 gap-4 items-center my-2 mx-3">
+      <div class="col-span-2">
+        <img class="h-10 w-10 rounded-full" src="./assets/logo.png" alt="logo">
+      </div>
+      <div class="col-span-10">
+        <div class="relative items-center">
+          <input
+              class="rounded-3xl placeholder-gray-200 text-gray-500 text-sm border border-gray-400 h-8 w-full pl-14"
+              type="text" value="" placeholder="搜索内容和节点"/>
+          <icon-search class="h-6 w-6 absolute inset-y-0 left-4 my-1"/>
         </div>
       </div>
     </div>
 
     <!--分类-->
-    <div class="flex justify-between mx-4 mt-8">
-      <div class="space-x-4 mb-4 text-gray-600 text-xs">
-        <div><a href="#">我的订阅</a></div>
+    <div class="flex flex-nowrap px-4 mt-4 space-x-6 border-b border-gray-200 overflow-x-auto hidden-scrollbar font-bold text-default">
+      <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10 border-b-4 border-blue-500 text-black">订阅</div></a>
+      <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">推荐</div></a>
+      <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">后端</div></a>
+      <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">前端</div></a>
+      <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">新闻</div></a>
+      <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">体育</div></a>
+      <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">运维</div></a>
+    </div>
+
+    <!--内容-->
+    <div class="flex flex-col h-[calc(100vh-8rem)] mx-4 pt-4 hidden-scrollbar overflow-y-auto">
+      <div>
+        <div class="flex items-center">
+          <img class="rounded-xl w-8 h-8"
+               src="https://file.ipadown.com/tophub/assets/images/media/blog.csdn.net.png_120x120.png" alt="">
+          <div class="ml-4 text-sm text-gray-500">刚刚</div>
+        </div>
+        <div class="relative flex pl-[calc(3rem+2px)] overflow-hidden mt-1 pb-4">
+          <div class="flex flex-col space-y-3">
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+          </div>
+          <div class="absolute left-3 h-full w-20 ml-0.5">
+            <span class="w-[2px] h-full bg-gray-500 absolute left-0 top-0 before:block before:w-full before:h-full before:bg-gray-100"></span>
+          </div>
+        </div>
       </div>
-      <div class="hidden md:flex space-x-4 mb-4 text-gray-600 text-xs">
-        <div class="text-red-500 font-bold"><a href="#">每日晚报</a></div>
-        <div>·</div>
-        <div><a href="#">订阅动态</a></div>
-        <div><a href="#">榜中榜</a></div>
-        <div><a href="#">话题聚合</a></div>
-        <div><a href="#">热点日历</a></div>
-        <div><a href="#">刷屏热词</a></div>
-        <div><a href="#">追踪器</a></div>
-        <div><a href="#">收藏夹</a></div>
-        <div><a href="#">更多榜单</a></div>
+      <div>
+        <div class="flex items-center">
+          <img class="rounded-xl w-8 h-8"
+               src="https://file.ipadown.com/tophub/assets/images/media/infoq.cn.png_120x120.png" alt="">
+          <div class="ml-4 text-sm text-gray-500">19 分钟前</div>
+        </div>
+        <div class="relative flex pl-[calc(3rem+2px)] overflow-hidden mt-1 pb-4">
+          <div class="flex flex-col space-y-3">
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+          </div>
+          <div class="absolute left-3 h-full w-20 ml-0.5">
+            <span class="w-[2px] h-full bg-gray-500 absolute left-0 top-0 before:block before:w-full before:h-full before:bg-gray-100"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <img class="rounded-xl w-8 h-8"
+               src="https://file.ipadown.com/tophub/assets/images/media/williamlong.info.png_120x120.png" alt="">
+          <div class="ml-4 text-sm text-gray-500">25 分钟前</div>
+        </div>
+        <div class="relative flex pl-[calc(3rem+2px)] overflow-hidden mt-1 pb-4">
+          <div class="flex flex-col space-y-3">
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+          </div>
+          <div class="absolute left-3 h-full w-20 ml-0.5">
+            <span class="w-[2px] h-full bg-gray-500 absolute left-0 top-0 before:block before:w-full before:h-full before:bg-gray-100"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <img class="rounded-xl w-8 h-8"
+               src="https://file.ipadown.com/tophub/assets/images/media/segmentfault.com.png_120x120.png" alt="">
+          <div class="ml-4 text-sm text-gray-500">30 分钟前</div>
+        </div>
+        <div class="relative flex pl-[calc(3rem+2px)] overflow-hidden mt-1 pb-4">
+          <div class="flex flex-col space-y-3">
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+          </div>
+          <div class="absolute left-3 h-full w-20 ml-0.5">
+            <span class="w-[2px] h-full bg-gray-500 absolute left-0 top-0 before:block before:w-full before:h-full before:bg-gray-100"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <img class="rounded-xl w-8 h-8"
+               src="https://file.ipadown.com/tophub/assets/images/media/blog.csdn.net.png_120x120.png" alt="">
+          <div class="ml-4 text-sm text-gray-500">17 分钟前</div>
+        </div>
+        <div class="relative flex pl-[calc(3rem+2px)] overflow-hidden mt-1 pb-4">
+          <div class="flex flex-col space-y-3">
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+          </div>
+          <div class="absolute left-3 h-full w-20 ml-0.5">
+            <span class="w-[2px] h-full bg-gray-500 absolute left-0 top-0 before:block before:w-full before:h-full before:bg-gray-100"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <img class="rounded-xl w-8 h-8"
+               src="https://file.ipadown.com/tophub/assets/images/media/blog.csdn.net.png_120x120.png" alt="">
+          <div class="ml-4 text-sm text-gray-500">17 分钟前</div>
+        </div>
+        <div class="relative flex pl-[calc(3rem+2px)] overflow-hidden mt-1 pb-4">
+          <div class="flex flex-col space-y-3">
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+          </div>
+          <div class="absolute left-3 h-full w-20 ml-0.5">
+            <span class="w-[2px] h-full bg-gray-500 absolute left-0 top-0 before:block before:w-full before:h-full before:bg-gray-100"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <img class="rounded-xl w-8 h-8"
+               src="https://file.ipadown.com/tophub/assets/images/media/blog.csdn.net.png_120x120.png" alt="">
+          <div class="ml-4 text-sm text-gray-500">17 分钟前</div>
+        </div>
+        <div class="relative flex pl-[calc(3rem+2px)] overflow-hidden mt-1 pb-4">
+          <div class="flex flex-col space-y-3">
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+          </div>
+          <div class="absolute left-3 h-full w-20 ml-0.5">
+            <span class="w-[2px] h-full bg-gray-500 absolute left-0 top-0 before:block before:w-full before:h-full before:bg-gray-100"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <img class="rounded-xl w-8 h-8"
+               src="https://file.ipadown.com/tophub/assets/images/media/blog.csdn.net.png_120x120.png" alt="">
+          <div class="ml-4 text-sm text-gray-500">17 分钟前</div>
+        </div>
+        <div class="relative flex pl-[calc(3rem+2px)] overflow-hidden mt-1 pb-4">
+          <div class="flex flex-col space-y-3">
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+            <div class="flex items-center">
+              <icon-circle class="w-3 h-3"/>
+              <span class="text-sm text-gray-500 ml-2">详解神经网络中反向传播和梯度下降</span>
+            </div>
+          </div>
+          <div class="absolute left-3 h-full w-20 ml-0.5">
+            <span class="w-[2px] h-full bg-gray-500 absolute left-0 top-0 before:block before:w-full before:h-full before:bg-gray-100"></span>
+          </div>
+        </div>
+      </div>
+      <div class="flex block justify-center items-center space-x-2 mt-14 mb-12">
+        <span class="border-b w-[60px] h-[1px]"></span>
+        <div class="text-gray-400 text-sm">我也是有底线的</div>
+        <span class="border-b w-[60px] h-[1px]"></span>
       </div>
     </div>
 
-    <!--热点模块-->
-    <div class="grid grid-cols-4 mx-2">
-      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
-        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
-          <div class="flex justify-between mt-2 border-b">
-            <div class="flex font-bold text-lg mt-0.5">
-              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-              <div class="ml-1 text-gray-500">机器之心</div>
-            </div>
-            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
-          </div>
-          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">1</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">2</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">3</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>4</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>5</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>6</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>7</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>8</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>9</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-          </div>
-          <div class="flex items-center justify-between px-3 py-2 border-t">
-            <div class="text-gray-600 text-sm">7 分钟前</div>
-            <icon-elipsis class="w-6 h-6"/>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
-        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
-          <div class="flex justify-between mt-2 border-b">
-            <div class="flex font-bold text-lg mt-0.5">
-              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-              <div class="ml-1 text-gray-500">机器之心</div>
-            </div>
-            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
-          </div>
-          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">1</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">2</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">3</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>4</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>5</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>6</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>7</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>8</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>9</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-          </div>
-          <div class="flex items-center justify-between px-3 py-2 border-t">
-            <div class="text-gray-600 text-sm">7 分钟前</div>
-            <icon-elipsis class="w-6 h-6"/>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
-        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
-          <div class="flex justify-between mt-2 border-b">
-            <div class="flex font-bold text-lg mt-0.5">
-              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-              <div class="ml-1 text-gray-500">机器之心</div>
-            </div>
-            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
-          </div>
-          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">1</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">2</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">3</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>4</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>5</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>6</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>7</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>8</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>9</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-          </div>
-          <div class="flex items-center justify-between px-3 py-2 border-t">
-            <div class="text-gray-600 text-sm">7 分钟前</div>
-            <icon-elipsis class="w-6 h-6"/>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
-        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
-          <div class="flex justify-between mt-2 border-b">
-            <div class="flex font-bold text-lg mt-0.5">
-              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-              <div class="ml-1 text-gray-500">机器之心</div>
-            </div>
-            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
-          </div>
-          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">1</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">2</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">3</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>4</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>5</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>6</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>7</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>8</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>9</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-          </div>
-          <div class="flex items-center justify-between px-3 py-2 border-t">
-            <div class="text-gray-600 text-sm">7 分钟前</div>
-            <icon-elipsis class="w-6 h-6"/>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
-        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
-          <div class="flex justify-between mt-2 border-b">
-            <div class="flex font-bold text-lg mt-0.5">
-              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-              <div class="ml-1 text-gray-500">机器之心</div>
-            </div>
-            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
-          </div>
-          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">1</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">2</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">3</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>4</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>5</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>6</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>7</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>8</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>9</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-          </div>
-          <div class="flex items-center justify-between px-3 py-2 border-t">
-            <div class="text-gray-600 text-sm">7 分钟前</div>
-            <icon-elipsis class="w-6 h-6"/>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-4 2xl:col-span-1 md:col-span-2 mb-4">
-        <div class="flex flex-col px-3 mx-2 bg-white rounded-md">
-          <div class="flex justify-between mt-2 border-b">
-            <div class="flex font-bold text-lg mt-0.5">
-              <div class="rounded-full w-6 h-6 overflow-hidden"><img src="https://file.ipadown.com/tophub/assets/images/media/toutiao.io.png_50x50.png" alt=""></div>
-              <div class="ml-1 text-gray-500">机器之心</div>
-            </div>
-            <div class="border-b-2 text-gray-800 py-1.5 text-md">最热文章</div>
-          </div>
-          <!--scrollbar定义滚动条样式，需要tailwindcss.css中定义-->
-          <div class="flex flex-col py-2 pr-2 space-y-2 h-72 overflow-y-scroll scrollbar">
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">1</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">2</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div class="text-red-500">3</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>4</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>5</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>6</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>7</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>8</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="flex">
-                <div>9</div>
-                <div class="ml-3.5">立即体验！直接可用的中文版ChatGPT来了</div>
-              </div>
-              <div class="whitespace-nowrap text-gray-500">机器之心</div>
-            </div>
-          </div>
-          <div class="flex items-center justify-between px-3 py-2 border-t">
-            <div class="text-gray-600 text-sm">7 分钟前</div>
-            <icon-elipsis class="w-6 h-6"/>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--底线-->
-    <div class="flex justify-center items-center space-x-2 pt-20 pb-12">
-      <span class="border-b" style="width: 100px;height: 1px;"></span>
-      <div class="text-gray-400 text-sm">我也是有底线的</div>
-      <span class="border-b" style="width: 100px;height: 1px;"></span>
+    <!--导航条-->
+    <div class="min-w-[375px] fixed bottom-0 grid grid-cols-4 border bg-white">
+      <div class="col-span-1 h-12 flex justify-center items-center"><icon-home class="w-7 h-7"/></div>
+      <div class="col-span-1 h-12 flex justify-center items-center"><icon-explore class="w-7 h-7"/></div>
+      <div class="col-span-1 h-12 flex justify-center items-center"><icon-notice class="w-7 h-7"/></div>
+      <div class="col-span-1 h-12 flex justify-center items-center"><IconPeople class="w-7 h-7"/></div>
     </div>
 
   </div>
-
 </template>
+
+<script setup>
+import IconSearch from "./icon/IconSearch.vue";
+import IconHome from "./icon/IconHome.vue";
+import IconPeople from "./icon/IconPeople.vue";
+import IconNotice from "./icon/IconNotice.vue";
+import IconExplore from "./icon/IconExplore.vue";
+import IconCircle from "./icon/IconCircle.vue";
+</script>
+

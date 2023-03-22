@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 隐藏垂直滚动条 */
+.hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
 /* 定义滚动条的样式 */
 .scrollbar::-webkit-scrollbar {
     width: 6px;
