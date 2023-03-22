@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#f2f2f2] h-screen">
+  <div class="bg-[#f2f2f2]">
     <div class="max-w-[1024px] min-w-[375px] m-auto bg-white">
 
       <!--头部-->
