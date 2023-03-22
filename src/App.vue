@@ -238,7 +238,7 @@
             </div>
           </div>
         </div>
-        <div class="flex block justify-center items-center space-x-2 mt-14 pb-4">
+        <div class="flex block justify-center items-center space-x-2 my-24">
           <span class="border-b w-[60px] h-[1px]"></span>
           <div class="text-gray-400 text-sm">我也是有底线的</div>
           <span class="border-b w-[60px] h-[1px]"></span>
