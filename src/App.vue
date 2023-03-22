@@ -1,6 +1,6 @@
 <template>
   <div class="relative bg-[#f2f2f2] h-screen">
-    <div class="max-w-[1024px] min-w-[375px] m-auto border-x bg-white">
+    <div class="max-w-[1024px] min-w-[375px] m-auto bg-white">
 
       <!--头部-->
       <div class="grid grid-cols-12 gap-4 items-center pt-2 mb-2 mx-3">
@@ -246,7 +246,7 @@
       </div>
 
       <!--导航条-->
-      <div class="max-w-[1024px] min-w-[375px] absolute bottom-0 m-auto border-l border-r inset-x-0 flex justify-around border-t bg-white">
+      <div class="max-w-[1024px] min-w-[375px] absolute bottom-0 m-auto inset-x-0 flex justify-around border-t bg-white">
           <div class="col-span-1 h-12 flex justify-center items-center"><icon-home class="w-7 h-7"/></div>
           <div class="col-span-1 h-12 flex justify-center items-center"><icon-explore class="w-7 h-7"/></div>
           <div class="col-span-1 h-12 flex justify-center items-center"><icon-notice class="w-7 h-7"/></div>
