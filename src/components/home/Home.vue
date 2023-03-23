@@ -8,12 +8,17 @@
           <img class="h-10 w-10 rounded-full" src="../../assets/logo.png" alt="logo">
         </div>
         <div class="col-span-10">
-          <div class="relative items-center">
-            <input
-                class="rounded-3xl placeholder-gray-200 text-gray-500 text-sm border border-gray-400 h-8 w-full pl-14"
-                type="text" value="" placeholder="搜索内容和节点"/>
-            <icon-search class="h-6 w-6 absolute inset-y-0 left-4 my-1"/>
-          </div>
+          <transition name="slide-left">
+            <router-link to="/search">
+              <div class="relative items-center">
+                <input
+                    class="rounded-3xl placeholder-gray-200 text-gray-500 text-sm border border-gray-400 h-8 w-full pl-14 cursor-pointer"
+                    onfocus="this.blur()"
+                    type="text" value="" placeholder="搜索内容和节点"/>
+                <icon-search class="h-6 w-6 absolute inset-y-0 left-4 my-1"/>
+              </div>
+            </router-link>
+          </transition>
         </div>
       </div>
 
