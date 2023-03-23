@@ -1,7 +1,7 @@
 <script setup>
-import IconErweima from "../icon/IconErweima.vue";
-import IconCircle from "../icon/IconCircle.vue";
-import IconStar from "../icon/IconStar.vue";
+import IconErweima from "../../icon/IconErweima.vue";
+import IconCircle from "../../icon/IconCircle.vue";
+import IconStar from "../../icon/IconStar.vue";
 import SearchBar from "./SearchBar.vue";</script>
 
 <template>

@@ -1,5 +1,7 @@
 <template>
-  <router-view/>
+  <div>
+    search
+  </div>
 </template>
 
 <script setup>

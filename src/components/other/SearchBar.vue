@@ -52,6 +52,6 @@
   </div>
 </template>
 <script setup>
-import IconSearch from "../icon/IconSearch.vue";
+import IconSearch from "../../icon/IconSearch.vue";
 import {Menu, MenuButton, MenuItem, MenuItems} from '@headlessui/vue'
 </script>
