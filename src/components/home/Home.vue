@@ -263,11 +263,11 @@
 </template>
 
 <script setup>
-import IconSearch from "../../icon/IconSearch.vue";
-import IconHome from "../../icon/IconHome.vue";
-import IconPeople from "../../icon/IconPeople.vue";
-import IconNotice from "../../icon/IconNotice.vue";
-import IconExplore from "../../icon/IconExplore.vue";
-import IconCircle from "../../icon/IconCircle.vue";
+import IconSearch from "@/icon/IconSearch.vue";
+import IconHome from "@/icon/IconHome.vue";
+import IconPeople from "@/icon/IconPeople.vue";
+import IconNotice from "@/icon/IconNotice.vue";
+import IconExplore from "@/icon/IconExplore.vue";
+import IconCircle from "@/icon/IconCircle.vue";
 </script>
 
