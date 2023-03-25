@@ -3,7 +3,7 @@
     <div class="max-w-[1024px] min-w-[375px] m-auto bg-white">
 
       <!--头部-->
-      <div class="grid grid-cols-12 gap-4 items-center pt-2 mb-2 mx-3">
+      <div class="grid grid-cols-12 gap-4 items-center my-2 mx-3">
         <div class="col-span-2">
           <img class="h-10 w-10 rounded-full" src="../../assets/logo.png" alt="logo">
         </div>
@@ -23,14 +23,14 @@
       </div>
 
       <!--分类-->
-      <div class="flex flex-nowrap px-4 mt-4 space-x-6 border-b border-gray-200 overflow-x-auto hidden-scrollbar font-bold text-default">
-        <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10 border-b-4 border-blue-500 text-black">订阅</div></a>
-        <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">推荐</div></a>
-        <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">后端</div></a>
-        <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">前端</div></a>
-        <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">新闻</div></a>
-        <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">体育</div></a>
-        <a class="whitespace-no-wrap flex-shrink-0" href="#"><div class="h-10">运维</div></a>
+      <div class="flex flex-nowrap border-b border-gray-200 overflow-x-auto hidden-scrollbar font-bold text-default">
+        <a class="whitespace-no-wrap flex-shrink-0 px-4" href="#"><div class="flex items-center h-12 border-b-4 border-blue-500 text-black">订阅</div></a>
+        <a class="whitespace-no-wrap flex-shrink-0 px-4" href="#"><div class="flex items-center h-12">推荐</div></a>
+        <a class="whitespace-no-wrap flex-shrink-0 px-4" href="#"><div class="flex items-center h-12">后端</div></a>
+        <a class="whitespace-no-wrap flex-shrink-0 px-4" href="#"><div class="flex items-center h-12">前端</div></a>
+        <a class="whitespace-no-wrap flex-shrink-0 px-4" href="#"><div class="flex items-center h-12">新闻</div></a>
+        <a class="whitespace-no-wrap flex-shrink-0 px-4" href="#"><div class="flex items-center h-12">体育</div></a>
+        <a class="whitespace-no-wrap flex-shrink-0 px-4" href="#"><div class="flex items-center h-12">运维</div></a>
       </div>
 
       <!--内容-->
@@ -252,10 +252,10 @@
 
       <!--导航条-->
       <div class="max-w-[1024px] min-w-[375px] fixed bottom-0 m-auto inset-x-0 flex justify-around border-t bg-white">
-        <div class="col-span-1 h-12 flex justify-center items-center"><icon-home class="w-7 h-7"/></div>
-        <div class="col-span-1 h-12 flex justify-center items-center"><icon-explore class="w-7 h-7"/></div>
-        <div class="col-span-1 h-12 flex justify-center items-center"><icon-notice class="w-7 h-7"/></div>
-        <div class="col-span-1 h-12 flex justify-center items-center"><IconPeople class="w-7 h-7"/></div>
+        <a href="#"><div class="col-span-1 h-12 flex justify-center items-center px-4"><icon-home class="w-7 h-7"/></div></a>
+        <a href="#"><div class="col-span-1 h-12 flex justify-center items-center px-4"><icon-explore class="w-7 h-7"/></div></a>
+        <a href="#"><div class="col-span-1 h-12 flex justify-center items-center px-4"><icon-notice class="w-7 h-7"/></div></a>
+        <a href="#"><div class="col-span-1 h-12 flex justify-center items-center px-4"><icon-people class="w-7 h-7"/></div></a>
       </div>
 
     </div>
