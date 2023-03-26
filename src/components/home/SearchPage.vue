@@ -78,10 +78,11 @@
     <!--搜索历史-->
     <div class="my-8">
       <div class="font-bold">搜索历史</div>
-      <div class="flex flex-wrap mt-2 gap-3">
+      <div class="flex flex-wrap mt-2 gap-3 text-sm">
         <div class="bg-gray-100 py-1 px-4 rounded-md">Chatgpt费用</div>
         <div class="bg-gray-100 py-1 px-4 rounded-md">Java开发</div>
         <div class="bg-gray-100 py-1 px-4 rounded-md">两个</div>
+        <div class="bg-gray-100 py-1 px-4 rounded-md">两</div>
         <div class="bg-gray-100 py-1 px-4 rounded-md">免费</div>
         <div class="bg-gray-100 py-1 px-4 rounded-md">开源sequence</div>
         <div class="bg-gray-100 py-1 px-4 rounded-md">知乎热榜</div>
