@@ -2,7 +2,7 @@
   <div class="max-w-[1024px] min-w-[375px] m-auto bg-[#f2f2f2]">
 
     <!--头像-->
-    <div class="relative h-72 bg-cover bg-center bg-[url('src/assets/douban-bg.jpg')]">
+    <div class="relative h-72 bg-cover bg-center bg-[url('@/assets/douban-bg.jpg')]">
       <div class="flex flex-col">
         <div class="flex justify-between mt-6 mx-4">
           <icon-sidebar/>
