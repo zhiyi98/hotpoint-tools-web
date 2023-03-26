@@ -21,7 +21,7 @@
     </div>
 
     <!--个人信息-->
-    <div class="relative top-[-15px] px-4 bg-white rounded-2xl pt-2">
+    <div class="relative top-[-15px] px-4 bg-white rounded-2xl pt-2 h-[1000px]">
       <div class="flex justify-between items-center mt-2">
         <div class="space-y-1">
           <div class="text-xl font-bold">梦幻泡影</div>

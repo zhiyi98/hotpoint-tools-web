@@ -13,7 +13,7 @@
             p-id="6611"></path>
       </svg>
     </div>
-    <div class="absolute top-[-5px] left-3.5 bg-red-400 border-[2px] border-white rounded-full">
+    <div class="absolute top-[-5px] left-3.5 bg-red-500 border-[2px] border-white rounded-full">
       <div class="w-5 h-5 text-white text-[12px] font-bold flex justify-center items-center">99</div>
     </div>
   </div>
