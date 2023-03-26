@@ -251,12 +251,7 @@
       </div>
 
       <!--导航条-->
-      <div class="max-w-[1024px] min-w-[375px] fixed bottom-0 m-auto inset-x-0 flex justify-around border-t bg-white">
-        <a href="#"><div class="col-span-1 h-12 flex justify-center items-center px-4"><icon-home class="w-7 h-7"/></div></a>
-        <a href="#"><div class="col-span-1 h-12 flex justify-center items-center px-4"><icon-explore class="w-7 h-7"/></div></a>
-        <a href="#"><div class="col-span-1 h-12 flex justify-center items-center px-4"><icon-notice class="w-7 h-7"/></div></a>
-        <a href="#"><div class="col-span-1 h-12 flex justify-center items-center px-4"><icon-people class="w-7 h-7"/></div></a>
-      </div>
+      <nav-bar/>
 
     </div>
   </div>
@@ -264,10 +259,7 @@
 
 <script setup>
 import IconSearch from "@/icon/IconSearch.vue";
-import IconHome from "@/icon/IconHome.vue";
-import IconPeople from "@/icon/IconPeople.vue";
-import IconNotice from "@/icon/IconNotice.vue";
-import IconExplore from "@/icon/IconExplore.vue";
 import IconCircle from "@/icon/IconCircle.vue";
+import NavBar from "@/components/home/NavBar.vue";
 </script>
 
