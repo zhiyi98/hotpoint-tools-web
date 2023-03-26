@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[1024px] min-w-[375px] m-auto bg-[#f2f2f2]">
+  <div class="max-w-[1024px] min-w-[375px] m-auto bg-white">
 
     <!--头像-->
     <div class="relative h-72 bg-cover bg-center bg-[url('@/assets/douban-bg.jpg')]">
@@ -19,8 +19,9 @@
         <!--<div class="absolute inset-0 h-10 bg-gradient-to-b from-transparent to-blue-500"></div>-->
       </div>
     </div>
+
     <!--个人信息-->
-    <div class="relative top-[-15px] px-4 bg-[#f2f2f2] rounded-2xl py-2">
+    <div class="relative top-[-15px] px-4 bg-white rounded-2xl pt-2">
       <div class="flex justify-between items-center mt-2">
         <div class="space-y-1">
           <div class="text-xl font-bold">梦幻泡影</div>
@@ -34,7 +35,7 @@
           <icon-right/>
         </div>
       </div>
-      <div class="my-4 rounded-xl bg-white py-4">
+      <div class="mt-4 rounded-xl bg-white py-4">
         <div class="grid grid-cols-4 font-bold text-lg">
           <div class="col-span-1 flex justify-center">0</div>
           <div class="col-span-1 flex justify-center">8</div>
@@ -49,23 +50,10 @@
         </div>
       </div>
     </div>
-    <!--主页-->
-    <div class="bg-[#f2f2f2] pb-24">
-      <div class="bg-white px-4 my-2 mx-4 rounded-xl">
-        <div class="flex justify-between py-4">
-          <div class="flex space-x-4 text-gray-400">
-            <div class="text-black font-bold border-b-2 border-black">主页</div>
-            <div>动态</div>
-            <div>相册</div>
-          </div>
-          <div class="font-bold">徽章</div>
-        </div>
-        <div class="px-2 h-[800px]">
-        </div>
-      </div>
-    </div>
+
     <!--导航条-->
     <nav-bar/>
+
   </div>
 </template>
 
