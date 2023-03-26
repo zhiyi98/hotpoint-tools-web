@@ -10,7 +10,7 @@
         </div>
         <div class="flex justify-center my-8">
           <div class="relative">
-            <img class="rounded-full border-[3px]" src="@/assets/avatar.jpg" alt="">
+            <img class="rounded-full border-[3px] border-white" src="@/assets/avatar.jpg" alt="">
             <div class="absolute bottom-0 right-0 flex justify-center items-center rounded-full w-7 h-7 bg-white">
               <icon-camara/>
             </div>
